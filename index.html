@@ -130,9 +130,9 @@
     .nav-dropdown:hover > a::after { transform: rotate(180deg); opacity: 1; }
     .dropdown-menu {
       position: absolute;
-      top: calc(100% + 12px);
+      top: 100%;
       left: 50%;
-      transform: translateX(-50%) translateY(6px);
+      transform: translateX(-50%) translateY(8px);
       background: var(--white);
       border: 1px solid rgba(10,37,64,0.09);
       border-radius: 14px;
@@ -144,6 +144,7 @@
       pointer-events: none;
       transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
       z-index: 200;
+      margin-top: 0;
     }
     .nav-dropdown:hover .dropdown-menu {
       opacity: 1;
@@ -1327,14 +1328,12 @@
       <div class="dropdown-menu">
         <a href="/sms">
           <span class="dropdown-icon">💬</span>
-          SMS / WhatsApp Marketing
+          SMS Marketing
         </a>
-        <div class="dropdown-divider"></div>
         <a href="/ordering">
           <span class="dropdown-icon">🍽️</span>
           Restaurant Online Ordering
         </a>
-        <div class="dropdown-divider"></div>
         <a href="/websites">
           <span class="dropdown-icon">🌐</span>
           Modern Websites
